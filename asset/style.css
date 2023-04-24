@@ -1,0 +1,75 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body {
+    background: url('img/fondEcran.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+
+
+#reseaux-social {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0 1rem 2rem;
+}
+
+#reseaux-social div {
+    margin-right: 2rem;
+}
+
+.color-white {
+    color: black;
+    list-style-type: none;
+    text-decoration: none;
+    padding-left: 0.5rem;
+}
+
+#logo {
+    width: 5rem;
+}
+
+nav {
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#navbar-phone {
+    display: none;
+}
+
+
+/* MEDIA QUERRIES */
+
+@media (max-width: 767px) {
+    #navbar-phone {
+        display: block;
+    }
+
+    #navbar-pc {
+        display: none;
+    }
+    #reseaux-social {
+        display: none;
+    }
+    nav {
+        margin-top: 0;
+    }
+    #logo-phone {
+        width: 4rem;
+        padding-left: 1rem;
+    }
+    .logo-menu-phone {
+        width: 8rem;
+    }
+}
